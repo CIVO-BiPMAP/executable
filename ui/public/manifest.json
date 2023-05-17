@@ -1,0 +1,13 @@
+{
+  "short_name": "BiPMAP",
+  "name": "Binocular Perceived Motion Artifact Predictor",
+  "icons": [
+    {
+      "src": "../src/assets/ucb_logo.ico"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

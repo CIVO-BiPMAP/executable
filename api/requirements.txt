@@ -1,0 +1,12 @@
+flask
+waitress
+matplotlib
+numpy
+scipy
+scikit-image
+debugpy
+humanize
+psutil
+GPUtil
+boto3
+python-dotenv

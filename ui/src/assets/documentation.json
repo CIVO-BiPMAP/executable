@@ -1,0 +1,18 @@
+{
+    "0.1.0-alpha": {
+        "date": "07/27/2022",
+        "notes": "\u2022 Initial release of the toolbox."
+    },
+    "0.2.0-alpha": {
+        "date": "08/20/2022",
+        "notes": "\u2022 Fixed visual artifacts related to compression during plotting.\n\u2022 Added download capabilities."
+    },
+    "0.3.0-alpha": {
+        "date": "08/22/2022",
+        "notes": "\u2022 Added comparison feature.\n\u2022 Integrated download with comparison feature."
+    },
+    "0.1.0-beta": {
+        "date": "11/10/2022",
+        "notes": "\u2022 Added the stereo artifact pipeline.\n\u2022 Added device selection menu.\n\u2022 Added configurable filename.\n\u2022 Added clear messages for timing runs.\n\u2022 Bug fixes and QOL improvements."
+    }
+}

@@ -1,0 +1,124 @@
+{
+  "name": "BiPMAP",
+  "packageManager": "npm@8.5.0",
+  "description": "BiPMAP description.",
+  "version": "1.0.0",
+  "main": "./src/executable.js",
+  "private": true,
+  "homepage": "./",
+  "proxy": "http://localhost:3334/",
+  "dependencies": {
+    "@aws-sdk/client-ec2": "^3.115.0",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.67",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.5.2",
+    "@mui/system": "^5.8.7",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "aws-sdk": "^2.1161.0",
+    "dotenv": "^16.0.1",
+    "downloadjs": "^1.4.7",
+    "electron-compile": "^6.4.4",
+    "electron-is-dev": "^2.0.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "is-reachable": "^5.2.1",
+    "jquery": "^3.6.0",
+    "material": "^0.4.3",
+    "npm": "^8.11.0",
+    "package.json": "^2.0.1",
+    "python-shell": "^3.0.1",
+    "react": "^17.0.2",
+    "react-color": "^2.19.3",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "serve": "^14.0.1",
+    "tree-kill": "^1.2.2",
+    "url-exists": "^1.0.3",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "electron-forge": "^5.2.4",
+    "electron-prebuilt-compile": "8.2.0",
+    "eslint-config-react-app": "^7.0.1"
+  },
+  "scripts": {
+    "start": "electron-forge start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "react-dev": "react-scripts start",
+    "dev": "electron .",
+    "electron-pack": "electron-builder",
+    "package": "react-scripts build && electron-forge package",
+    "make": "react-scripts build && electron-forge make"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Dekel Galor, Guanghan Meng",
+  "license": "GNU GPLv3",
+  "bugs": {
+    "url": "https://github.com/galord8696/sp_toolbox/issues"
+  },
+  "config": {
+    "forge": {
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "BiPMAP"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {
+            "name": "BiPMAP"
+          }
+        }
+      ],
+      "electronPackagerConfig": {
+        "packageManager": "yarn",
+        "icon": "./src/assets/ucb_logo.ico",
+        "extraResource": [
+          "../api/"
+        ]
+      },
+      "electronWinstallerConfig": {
+        "name": "BiPMAP"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "BiPMAP"
+      }
+    }
+  }
+}
