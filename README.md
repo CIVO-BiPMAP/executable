@@ -10,7 +10,8 @@ For GPU Acceleration:
 2. CUDA must be installed (tested on version 11.7).
 ### Installation
 1. Download the [latest release](https://github.com/CIVO-BiPMAP/executable/releases) of BiPMAP and unzip to your Documents.
-4. Inside the folder, launch BiPMAP.exe (recommended to pin to taskbar).
+2. Inside the folder, launch BiPMAP.exe as administrator (only needed for the first run, when it creates a virtual environment with necessary libraries).
+3. (Optional) Pin to taskbar / make a desktop shortcut.
 
 **During the first launch, BiPMAP automatically installs libraries which takes a few minutes.**
 
